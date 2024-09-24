@@ -1,0 +1,86 @@
+/* 
+    this is a comment in css 
+*/
+/* 
+        Selector
+    1. use html tag names (div, body, p, etc.)
+       not able to style things of same tag seperately
+    2. id or class name
+        <div id = "app-container" || class = "wrapper">
+        #app-container{} || .wrapper{}
+    3. input types
+        input[type = "checkbox"]{}
+    4. hierarchy
+        > = immediate child     div>p{}
+        whitespace = any child  div p{}
+        + = adjacent sibling    div+p{}
+        ~ = any sibling         div~p{}
+*/
+/* Layout
+    Title/Logo
+    Nav bar
+    Hero section (how your company, group, etc. helps with thing)
+    Each body section needs slightly different styling to differentiate them
+
+  Box model
+  1. Content
+  2. Padding  (inner seperation)
+      For both padding and margin:
+        go in order of top, right, bottom, left
+        or y axis, x axis/ vert, horiz
+        or top, x axis, bottom
+  3. Border
+      size, style, color
+      border-radius curves edges of the border
+  4. Margin   (outer seperation)
+  see ./image/boxmodel.png
+
+  How to center a div element
+  1. display:block
+     margin: auto
+  2. display: flex            (flexbox)
+     justify-content: center  (horizontal)
+     align-items: center      (vertical)
+
+      flex properties
+        flex-direction: row | column | row-reverse | column-reverse
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(252, 243, 233);
+}
+
+#primary-heading {
+  color: blue;
+  border: 2px solid red;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px 10px 50px 10px;
+  background-color: rgb(189, 181, 173);
+  text-align: center;
+}
+
+.heading-group {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.news-events {
+  display: flex;
+  flex-direction: column;
+
+  .media-wrapper{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .media-tile{
+    display: flex;
+    flex-direction: column;
+  }
+
+}

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meme Home</title>
+
+    <!--internal styling-->
+    <!-- <style></style> -->
+
+    <!--external styling-->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Division of the title-->
+      <div>
+        <h1 id="primary-heading" class="heading-group">Title</h1>
+        <h2 class="heading-group">this is the subtitle</h2>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#menu-item-about">About</a></li>
+          <li><a href="./html/semantic-html-example.html">Products</a></li>
+          <li><a href="#menu-item-contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- practice for web wireframe -->
+      <section class="news-events">
+        <div class="section-title">
+          <h3 class="section-title">News Events</h3>
+        </div>
+        <div class="media-wrapper">
+          <div class="media-tile">
+            <div class="news-media">
+              <img
+                src="./assets/image/mememan.jpg"
+                alt=""
+                class="news-images"
+              />
+            </div>
+            <div class="news-text">
+              <a href="http://www.oakland.edu"><h3>News title test</h3></a>
+            </div>
+          </div>
+          <div class="media-tile">
+            <div class="news-media">
+              <img
+                src="./assets/image/mememan.jpg"
+                alt=""
+                class="news-images"
+              />
+            </div>
+            <div class="news-text">
+              <a href="http://www.oakland.edu"><h3>News title test</h3></a>
+            </div>
+          </div>
+          <div class="media-tile">
+            <div class="news-media">
+              <img
+                src="./assets/image/mememan.jpg"
+                alt=""
+                class="news-images"
+              />
+            </div>
+            <div class="news-text">
+              <a href="http://www.oakland.edu"><h3>News title test</h3></a>
+            </div>
+          </div>
+          <div class="media-tile">
+            <div class="news-media">
+              <img
+                src="./assets/image/mememan.jpg"
+                alt=""
+                class="news-images"
+              />
+            </div>
+            <div class="news-text">
+              <a href="http://www.oakland.edu"><h3>News title test</h3></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--division for overview paragraph-->
+      <div>
+        <h3>Overview</h3>
+        <span>this is a statement inside an inline tag</span>
+        <span>this is a second statement inside an inline tag</span>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis,
+          alias cupiditate molestias soluta earum necessitatibus ut, natus
+          molestiae nisi ex consequuntur. Cumque, eligendi architecto magnam
+          minus quidem incidunt aliquam unde!
+        </p>
+      </div>
+      <!--division for significance paragraph-->
+      <div class="container-element">
+        <h3>Significance</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
+          laboriosam, ab deserunt voluptas deleniti hic, eos sunt minus aut
+          debitis quaerat ipsam fugit natus tempore esse sapiente quae, dolores
+          ullam.
+        </p>
+        <br />
+        <hr />
+        <br />
+      </div>
+
+      <!-- Image embedding, hyperreferenceing, lists, multimedia files, table data -->
+      <!-- html attributes - id, class, src, href, alt -->
+      <!--insert an image into the html document-->
+      <div>
+        <!-- self closing html tags -->
+        <figure>
+          <img
+            src="./assets/image/mememan.jpg"
+            alt="this is an image of the meme man head meme"
+            width="900px"
+            height="200px"
+          />
+          <figcaption>Meme man</figcaption>
+        </figure>
+      </div>
+
+      <div>
+        <!-- html lists 1, ordered and unordered lists-->
+        <ol>
+          <li>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+            molestias maiores quibusdam, omnis eaque, laboriosam aliquam
+            dignissimos a iure doloremque in labore corrupti! Voluptate
+            necessitatibus sit beatae alias omnis laborum.
+          </li>
+          <li>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus
+            dignissimos quod sapiente sint molestiae atque, sit cumque eius
+            maxime iste quaerat. Porro quidem mollitia amet qui sunt libero
+            voluptatem? Eveniet.
+          </li>
+          <li>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum,
+            beatae quasi magnam ex eaque illo incidunt sapiente, quibusdam
+            tempora obcaecati inventore unde veritatis! Error porro sint ullam
+            tenetur consequatur quos.
+          </li>
+          <li>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio
+            sapiente, saepe est sequi distinctio totam veritatis molestiae
+            molestias, optio blanditiis sint ad! Numquam, obcaecati tenetur
+            quidem eius laudantium rem repudiandae.
+          </li>
+        </ol>
+
+        <br />
+        <hr />
+        <br />
+
+        <!-- About menu item should navigate to this unordered list-->
+        <!-- "ul>li*4 enter" -->
+        <ul id="menu-item-about">
+          <li>item 2</li>
+          <li>item 3</li>
+          <li>item 4</li>
+          <li>item 5</li>
+        </ul>
+
+        <br />
+        <hr />
+        <br />
+
+        <!-- multimedia files and audio-->
+        <audio src="./assets/audio/datboi.mp3" controls></audio>
+        <video src="./assets/video/datboi1080.mp4" controls width="400px">
+          <source src="./assets/video/datboi480.mp4" />
+        </video>
+
+        <br />
+        <hr />
+        <br />
+
+        <table border="1">
+          <thead>
+            <tr>
+              <th>First</th>
+              <th>Last</th>
+              <th>GPA</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John</td>
+              <td>Wick</td>
+              <td>3.75</td>
+            </tr>
+            <tr>
+              <td>Jane</td>
+              <td>Doe</td>
+              <td>3.85</td>
+            </tr>
+          </tbody>
+          <tfoot></tfoot>
+        </table>
+
+        <br />
+        <hr />
+        <br />
+      </div>
+
+      <!--IMPORTANT section-->
+      <!-- getting input from users -->
+      <!-- html forms > input fields -->
+
+      <!--form elem-->
+      <form action="#" method="get">
+        <!--fields to take input-->
+        <label for="user-email">Enter your email:</label>
+        <input
+          placeholder="abc@email.com"
+          type="email"
+          name="user-email"
+          id="user-email"
+        />
+        <br />
+        <label for="user-pass">Enter you password:</label>
+        <input type="password" name="user-pass" id="user-pass" />
+        <br />
+        <input type="checkbox" name="" value="Coffee" id="test-checkbox" />
+        <label for="test-checkbox">Coffee</label>
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+
+      <section class="input-tutorials">
+        <!-- tutorial for radio btns-->
+        <!--present multiple options select only one-->
+        <!-- the name attribute for all radio btns are the same, value and ids are different-->
+        <p>Select your favorite pet:</p>
+        <input type="radio" name="pet" id="cats" value="cats" />
+        <label for="cats">Cats</label>
+        <br />
+        <input type="radio" name="pet" id="dogs" value="dogs" />
+        <label for="dogs">Dogs</label>
+        <br />
+        <input type="radio" name="pet" id="fish" value="fish" />
+        <label for="fish">Fish</label>
+        <br />
+
+        <!--checkboxes, present multiple, user can select multiple-->
+        <!-- the name attribute for all checkboxes btns are different and value and ids are different-->
+
+        <p>Select liked programming languages:</p>
+        <input type="checkbox" name="java" id="java" />
+        <label for="java">Java</label>
+        <br />
+        <input type="checkbox" name="python" id="python" />
+        <label for="python">Python</label>
+        <br />
+        <input type="checkbox" name="JS" id="JS" />
+        <label for="JS">JS</label>
+        <br />
+        <input type="checkbox" name="C++" id="C++" />
+        <label for="C++">C++</label>
+        <br />
+      </section>
+      <br />
+      <hr />
+      <br />
+      <!--the select from multiple option input type-->
+      <!--select and option element-->
+      <label for="states">Choose your midwest state:</label>
+      <select name="states" id="states">
+        <option value="#">Select a state</option>
+        <option value="MI">Michigan</option>
+        <option value="IL">Illinois</option>
+        <option value="OH">Ohio</option>
+      </select>
+      <br />
+      <hr />
+      <br />
+    </main>
+    <footer>
+      <div>
+        <!--hyperreferencing using anchor tags-->
+        <a href="https://www.wikipedia.org" id="menu-item-contact">Click here</a
+        ><span> to visit Wikipedia</span>
+        <br />
+        <a href="mailto:benny4man@gmail.com">Email me</a>
+      </div>
+    </footer>
+  </body>
+</html>
