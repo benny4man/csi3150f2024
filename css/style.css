@@ -1,5 +1,7 @@
 /* 
     this is a comment in css 
+
+    check coolors.co for color palettes
 */
 /* 
         Selector
@@ -44,20 +46,29 @@
 
       flex properties
         flex-direction: row | column | row-reverse | column-reverse
+  3. display: grid
+     place-items: center
 */
 
 * {
   padding: 0;
-  margin: 0;
+  margin: 0 0 0 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  /* how to declare and use css variable */
+  --primary-backgroud-color: #DEF2C8;
 }
 
 body {
+  background-image: url();
+  background-repeat: no-repeat;
+  background-size: cover;
+
   background-color: rgb(252, 243, 233);
 }
 
 #primary-heading {
-  color: blue;
-  border: 2px solid red;
+  color: var(--primary-backgroud-color);
+  border: 2px solid rgb(228, 8, 8);
   border-radius: 5px;
   padding: 15px;
   margin: 10px 10px 50px 10px;
@@ -66,21 +77,97 @@ body {
 }
 
 .heading-group {
-  font-family: Arial, Helvetica, sans-serif;
+  
 }
 
-.news-events {
+/* .news-events {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
 
-  .media-wrapper{
+  .section-title {
+    margin: 10px;
+  }
+
+  .media-wrapper {
     display: flex;
     flex-direction: row;
-  }
 
-  .media-tile{
-    display: flex;
-    flex-direction: column;
-  }
+    .media-tile {
+      display: flex;
+      flex-direction: column;
+      margin: 20px;
 
+      .news-images {
+        display: flex;
+      }
+      .news-text {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+} */
+
+/* tutorial for layin out elements on the html doc
+    replicating news subsection on oakland.edu */
+
+/* root node of the section */
+.news-events{
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* immediate child of root node */
+
+.section-title{
+  padding: 10px;
+  margin-bottom: 20px; /* separate this child vert from next one */
+  
+}
+
+.section-title-text{
+  padding: 10px;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: rgb(143, 143, 143);
+  color: rgb(241, 187, 68);
+}
+
+.media-wrapper{
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly; /*space-around, space-between, space-evenly can be used*/
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.media-tile{
+  border: 1px solid rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.news-media{
+  padding: 15px;
+  margin-bottom: 30px;
+  width: 150px;
+  height: 150px;
+}
+
+.news-images{
+  padding: 5px;
+  width: 150px;
+  height: 150px;
+}
+
+.news-text > a > h3{
+  padding: 10px;
+  color: rgb(241, 187, 68);
+  font-size: 18px;
+  font-weight: 300;
+  text-decoration: none;
 }
